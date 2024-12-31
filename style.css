@@ -1,0 +1,909 @@
+
+.number-card {
+  padding: 20px;
+  background-color: #020407;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(91, 72, 72, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.number-card:hover {
+  transform: translateY(-10px);
+}
+
+.number-card h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.number-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .number-card {
+    padding: 15px;
+  }
+
+  .number-card h1 {
+    font-size: 18px;
+  }
+
+  .number-card p {
+    font-size: 24px;
+  }
+}
+
+/* Custom styling for image and text */
+#Home img {
+  border-radius: 8px;
+}
+
+#Home h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#mainp {
+  font-size: 16px;
+  line-height: 1.6;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #6d057d, #831893, #7230af); 
+  -webkit-background-clip: text; 
+  color: transparent;
+  margin-bottom: 20px;
+}
+.blinking-text {
+  animation: blink 2s infinite;
+}
+
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.gradient-button {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  background: linear-gradient(to right, #4a0d53, #44084e, #7230af);
+  color: white;
+  border-radius: 5px; /* Optional for rounded corners */
+  cursor: pointer;
+  animation: blink 1.5s infinite; /* Add blinking effect */
+  transition: opacity 0.3s ease;
+}
+
+.gradient-button:hover {
+  opacity: 0.9; /* Subtle dimming effect on hover */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+
+/* Reset some default styles for more control */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+header .nav-link {
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+header .btn {
+  margin-left: 10px;
+}
+
+section {
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for paragraphs and text content */
+p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Specific padding and margin for the About section */
+#About {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.number-card {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.number-card h1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.number-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+/* Add hover effect for number cards */
+.number-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Section for the Blog, Projects, and Contact */
+#Blog, #Projects, #Team, #Skills,#Tech,#About,#Gallery,#Footer{
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+#Blog, #Projects, #Team, #Skills,#Tech,#Gallery,#About h1{
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+footer .nav-link {
+  padding: 8px 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+footer .nav-link:hover {
+  color: #007bff;
+}
+
+footer p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+  .number-card {
+    padding: 15px;
+  }
+
+  .number-card h1 {
+    font-size: 16px;
+  }
+
+  .number-card p {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  header .nav-link {
+    padding: 8px 12px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    margin-left: 5px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .number-card {
+    padding: 18px;
+  }
+
+  .number-card h1 {
+    font-size: 17px;
+  }
+
+  .number-card p {
+    font-size: 26px;
+  }
+}
+.styled-box {
+  width: 200px;
+  height: 200px;
+  background-color: #4CAF50; /* Base color */
+  box-shadow: 
+      5px 5px 10px rgba(0, 0, 0, 0.2), /* Dark outer shadow */
+      -5px -5px 10px rgba(255, 255, 255, 0.3); /* Light inner shadow */
+  border-radius: 10px;
+}
+.styled-text {
+  font-size: 54px;
+  color: #3cbfa5;
+  text-shadow: 2px 2px 5px rgba(71, 112, 152, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+.gradient-overlay {
+  width: 300px;
+  height: 200px;
+  background-image: 
+      linear-gradient(to bottom right, rgba(255, 0, 150, 0.5), rgba(0, 200, 255, 0.5)),
+      url('your-image.jpg'); /* Background image */
+  background-size: cover;
+  background-blend-mode: overlay; /* Blend gradient with the image */
+  border-radius: 15px;
+}
+.filtered-element {
+  width: 200px;
+  height: 200px;
+  background-color: #ff8c00;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)) blur(3px);
+  border-radius: 50%;
+}
+.blend-mode-example {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+  mix-blend-mode: multiply; /* Blends with the background */
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+#mainh{
+  font-size: xx-large;
+}
+.card{
+  margin: 0 auto;
+  padding: 2em;
+  width: 300px;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #76838e, #5c849b, #b9d4fa, #2c3d5b, #2c354b);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+#Home{
+  background-color: #25889c;
+}
+
+.linkedin-button {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #005f8a; /* Darker blue on hover */
+}
+
+.fab {
+  font-size: 20px; /* LinkedIn icon size */
+}
+/* Team Member Styles */
+.team-member {
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.team-member:hover {
+  transform: translateY(-10px); /* Slightly lift the card */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+}
+
+.team-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.team-name {
+  font-size: 18px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Social Icon Styles */
+.social-icon img {
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon when hovered */
+}
+
+/* For images with circular border */
+.picss {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.picss:hover {
+  transform: scale(1.1); /* Zoom the image when hovered */
+}
+
+/*Skills*/
+/* Style for the skill cards */
+.skill-card {
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px); /* Hover effect to lift the card */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+
+.skill-icon {
+  height: 60px;
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on icons */
+.skill-icon:hover {
+  transform: scale(1.2); /* Zoom effect on icon hover */
+}
+
+/* Title and description styles */
+h3.text-body-emphasis {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Text container adjustments */
+.text-center {
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .skill-card {
+    padding: 15px;
+  }
+  .skill-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+/*Blog*/
+/* Style for blog cards */
+.blog-card {
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px); /* Hover effect to lift the card */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+/* Text and title styling */
+h3.text-dark {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+p.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Date styling */
+.text-body-secondary {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Continue reading link */
+.icon-link {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.icon-link:hover {
+  color: #0056b3;
+}
+
+.icon-link svg {
+  margin-left: 5px;
+}
+
+/* Thumbnail container (responsive) */
+.thumbnail-container {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Make the header non-fixed */
+header {
+  background-color: #f8f9fa;  /* Light background */
+  padding-top: 20px;  /* Adjust for top padding */
+  padding-bottom: 20px;
+}
+
+/* Styling for the logo */
+header .col-md-3 a svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;  /* Add smooth transition for interaction */
+}
+
+/* Add hover effect to the logo */
+header .col-md-3 a:hover svg {
+  transform: scale(1.1);  /* Slight zoom on hover */
+}
+
+/* Styling for the nav links */
+.nav-link {
+  color: #121312 !important;  /* Dark color for text */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+}
+
+/* Change link color on hover */
+.nav-link:hover {
+  color: #ffffff !important;  /* Blue color on hover */
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Add some space between the items */
+.nav {
+  gap: 20px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Ensure that on smaller screens, the items stack vertically */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;  /* Stack items in the center */
+  }
+
+  .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+}
+/* Style for the About Section */
+#About {
+  background-color: #f8f9fa;  /* Light background */
+  color: #343a40;  /* Dark text */
+  padding-top: 40px;
+}
+
+/* Heading Styling */
+#About h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Paragraph Styling */
+#About p {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+
+/* Styling for the Number Cards */
+.number-card {
+  background-color: #ffffff;  /* White background */
+  border: 1px solid #ddd;  /* Light border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Hover effect for the number cards */
+.number-card:hover {
+  transform: translateY(-5px);  /* Slight lift effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for count numbers */
+.number-card .count {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #343a40;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on count numbers */
+.number-card:hover .count {
+  color: #007bff;  /* Change color on hover */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .number-card {
+    padding: 1.5rem;
+  }
+
+  .number-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .number-card .count {
+    font-size: 2.5rem;
+  }
+}
+/* Style for the Tech Stack section */
+#Tech {
+  background-color: #f8f9fa;
+  padding-top: 40px;
+  color: #343a40;
+}
+
+/* Heading styling */
+#Tech h1,#About h1,#Blog h1,#Gallery h1,#Team h1,#Skills h1 {
+  font-size: 2.5rem;
+  line-height: 1.6;
+  font-weight: bold;
+  background: linear-gradient(to right, #400749, #671973, #bf66e5); 
+  -webkit-background-clip: text; 
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Container for the images and the line */
+.tech-stack-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+/* Horizontal Scrollable Image Container */
+.tech-stack-images {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: max-content;
+}
+
+.tech-stack-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+/* Line Animation */
+.line-animation {
+  margin-top: 30px;
+  border: 1px solid #007bff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 1s ease-in-out;
+}
+
+#Home,#Tech,#About,#Skills,#Blog,#Team,#Header,#Gallery,#Footer {
+  background: linear-gradient(90deg, #2F69B1, #43B4D3, #7CC7BD);
+  background-size: 300% 300%;
+  animation: gradientAnimation 30s ease infinite;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* Tech Stack Container */
+.tech-stack-container {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.tech-stack-images {
+  display: flex;
+  gap: 10px;
+  animation: scrollImages 20s linear infinite;
+}
+
+.tech-stack-images img {
+  width: calc(100% / 6); /* Display 6 images at a time */
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+/* Infinite Scroll Animation */
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100% / 6));
+  }
+}
+
+/* Line Animation */
+.line-animation {
+  height: 2px;
+  background: linear-gradient(90deg, #2F69B1, #43B4D3, #7CC7BD);
+  animation: moveLine 5s linear infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between icons */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.tech-icon {
+  height: 80px;
+  width: 80px;
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.tech-icon:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Animation for icons */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.tech-stack-container img {
+  animation: slide 5s ease-in-out infinite;
+}
+
+.line-animation {
+  height: 4px;
+  background-color: #000;
+  animation: line-slide 3s linear infinite;
+}
+
+@keyframes line-slide {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tech-icon {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+
+.team-member .picss {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px; /* Adjusts the corner curve */
+  border: 4px solid #ddd; /* Adds a border with a light gray color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a soft 3D effect */
+  object-fit: cover; /* Ensures the image fits well within the square */
+}
+
+.thumbnail-container {
+  width: 100%;          /* Adjust container width as needed */
+  height: auto;         /* Ensures container height adapts */
+  overflow: hidden;     /* Hides any overflow of the image */
+  position: relative;
+}
+
+.thumbnail-container img {
+  width: 100%;          /* Scales image to fit container width */
+  height: auto;         /* Maintains aspect ratio */
+  object-fit: cover;    /* Ensures image fills container, cropping as needed */
+}
+/* Style for Show More button */
+/* Style for Show More button */
+.show-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #0056b3;
+}
+footer p{
+  color: white;
+}
+
+.text-gradient {
+  font-size: 4rem;
+  line-height: 1.6;
+  background: linear-gradient(to right, #400749, #b425ca, #b673d2); 
+  -webkit-background-clip: text; 
+  color: transparent;
+  margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+
+
+

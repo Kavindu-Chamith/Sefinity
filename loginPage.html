@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginPage.css">
+    <link rel="stylesheet" href="CursorEffect.css">
+</head>
+<body>
+    <div class="container active" id="container">
+        <div class="form-container sign-up">
+            <form method="post">                
+                <h1>Create Account</h1>
+                <span>use your email for registration</span>
+                <input type="text" placeholder="Name" id="upName" name="upName">
+                <input type="email" placeholder="Email" id="upEmail" name="upEmail">
+                <input type="password" placeholder="Password" id="upPassword" name="upPassword">
+                <button type="button" name="signUp" id="signUp" onclick="check_signup(event)">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="post">
+                <h1>Sign in</h1>
+                <span>use your Email and Password</span>
+                <input type="email" placeholder="Email" name="inEmail" id="inEmail">
+                <input type="password" placeholder="Password" name="inPassword" id="inPassword">
+                <a href="#">Forget Your Password?</a>
+                <button type="button" name="signIn" id="signIn" onclick="check_signin(event)">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter Your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello Friend!</h1>
+                    <p>Register with Your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+<!-- --------------Curser Effect--------------- -->
+<div class="cursor">
+      
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <!-- --------------Curser Effect--------------- -->
+
+
+    <script src="https://kit.fontawesome.com/184e4d5cf8.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="loginPage.js"></script>  
+    <script src="CursorEffect.js"></script>
+</body>
+</html>

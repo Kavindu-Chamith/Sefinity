@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo/Sefinity logo.png" type="image/png">
+  <title>Sefinity</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CursorEffect.css">
+</head>
+<body style="background-color: rgb(32, 57, 69);">
+  <header id="Header"class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom mx-5 my-4">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="./loginPage.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="assets/logo/Sefinity logo.png" height="60" width="60" class="bi" style="margin-left: 30px;">
+      </a>
+    </div>
+  
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#Home" class="nav-link px-2 link-secondary text-white">Home</a></li>
+      <li><a href="#About" class="nav-link px-2">About</a></li>
+      <li><a href="#Blog" class="nav-link px-2">Blog</a></li>
+      <li><a href="#Skills" class="nav-link px-2">Skills</a></li>
+      <li><a href="#Team" class="nav-link px-2">Team</a></li>
+    </ul>
+
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+    </div>
+    
+
+    
+  </header>
+
+  
+
+  <div id="Home" class="container py-5 card">
+    <div class="row align-items-center">
+      <!-- Image Column -->
+      <div class="col-12 col-sm-6 col-md-5 mb-4 mb-md-0">
+        <img src="./assets/image_processing20220331-19079-1hsyr3p.gif" alt="Sample Image" class="img-fluid rounded" />
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-12 col-sm-6 col-md-7">
+        <!-- Text aligned to left -->
+        <h1 id="mainh" class="wrapper text-start text-gradient" style="font-size: xx-large; font-weight: 500;" >Welcome to Sefinity</h1>
+        <p id="mainp" class="gradient-text text-start blinking-text" style="font-size: x-large;" id="grad">Login to access resources</p>
+        <p style="font-size: medium;font-weight:500;"  class="text-start text-white ">
+          SE Network is a platform developed by the 22/23 Software Engineering batch of the University of Sabaragamuwa. The site is designed to share valuable lecture materials, highlight batch achievements, and showcase various student projects. It aims to serve as a resource hub and portfolio for the batch, connecting their academic work and collaborative achievements with a global audience.
+        </p>
+
+        <!-- Buttons aligned to left -->
+        <div class="col-md-3 text-start">
+          <a href='loginPage2.html' style='color:white;text-decoration:none;'>
+            <button type="button" class="btn btn-primary gradient-button">Login</button>
+          </a>
+          <a href='loginPage.html' style='color:white;text-decoration:none;'>
+            <button type="button" class="btn btn-primary gradient-button">Sign-up</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  
+ 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const mainHeading = document.getElementById("mainh");
+  
+      function typeText() {
+        const text = mainHeading.getAttribute("data-text") || mainHeading.innerText; // Get text from a data attribute or innerText
+        const duration = 2500; // Total duration for the typing effect
+        const interval = duration / text.length; // Time per character
+  
+        mainHeading.innerHTML = ""; // Start with empty content to ensure clean typing
+  
+        let index = 0;
+        const typeInterval = setInterval(() => {
+          // Append the next character, ensuring spaces are rendered correctly
+          mainHeading.innerHTML += text[index] === " " ? "&nbsp;" : text[index];
+          index++;
+  
+          // Stop the interval once all characters have been typed
+          if (index === text.length) {
+            clearInterval(typeInterval);
+  
+            // Immediately restart the typing animation
+            typeText(); // Restart typing immediately after finishing
+          }
+        }, interval);
+      }
+  
+      // Start the typing animation when the page loads
+      typeText();
+    });
+  </script>
+  
+  
+  
+  
+  </div>
+  <div id="About" class="container my-5 py-5">
+    <h1 class="text-center mb-4 ">About</h1>
+    <p class="text-center mb-5 text-white">
+      The 22/23 Software Engineering batch from the University of Sabaragamuwa is a vibrant group of 58 talented individuals specializing in diverse areas of IT, from AI and web development to many other cutting-edge fields. Each member brings unique skills and insights, creating a collaborative environment that drives innovation and learning. Together, we aim to push boundaries and make meaningful contributions in the tech world, showcasing our projects, achievements, and expertise through our SE Network platform.
+    </p>
+  
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+          <div class="number-card p-4 shadow rounded">
+            <h1 class="display-4 text-primary">Members</h1>
+
+            <p class="count mb-0" data-target="58">0</p>
+            <img src="./assets/about/members.png" alt="" height="240px" width="250px">
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+          <div class="number-card p-4 shadow rounded">
+            <h1 class="display-4 text-success">Projects</h1>
+            <p >Upcoming</p>
+            <img src="assets/about/project.png" alt="" height="200px" width="200px">
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+          <div class="number-card p-4 shadow rounded">
+            <h1 class="display-4 text-warning">Awards</h1>
+            <p >Upcominng</p>
+            <img src="assets/about/awards.png" alt="" height="200px" width="250px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+ <div id="Skills" class="container py-5">
+  <h1 class="text-center mb-5">Skills</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+      <!-- Web Development -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="assets/skills/17365478.png" alt="Web Development" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">Web Development</h3>
+              <p>Building responsive and interactive websites using modern web technologies like HTML, CSS, JavaScript, and frameworks like React and Angular.</p>
+          </div>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="./assets/skills/12098109.png" alt="UI/UX Design" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">UI/UX Design</h3>
+              <p>Designing user-friendly interfaces with a focus on user experience, using tools like Figma and Adobe XD to create visually appealing designs.</p>
+          </div>
+      </div>
+
+      <!-- AI Integration -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="assets/skills/12732083.png" alt="AI Integration" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">AI Integration</h3>
+              <p>Integrating artificial intelligence algorithms and machine learning models into software solutions to enhance functionality and decision-making.</p>
+          </div>
+      </div>
+
+      <!-- Model Training -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="assets/skills/3051913.png" alt="Model Training" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">Model Training</h3>
+              <p>Training machine learning models with large datasets, improving their accuracy and efficiency for various AI applications. </p>
+          </div>
+      </div>
+
+      <!-- System Design -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="assets/skills/2752457.png" alt="System Design" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">System Design</h3>
+              <p>Designing scalable and efficient systems with optimal architecture to meet the demands of modern applications and services.</p>
+          </div>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="assets/skills/11477444.png" alt="Digital Marketing" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">Digital Marketing</h3>
+              <p>Creating effective online marketing campaigns and strategies through SEO, content marketing, and social media platforms to drive business growth.</p>
+          </div>
+      </div>
+
+      <!-- Featured Topic 1 -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="assets/skills/11754021-removebg-preview.png" alt="Cloud Computing" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">Cloud Computing</h3>
+              <p>Leveraging cloud platforms like AWS, Azure, and Google Cloud to build and deploy scalable and cost-effective applications and services.</p>
+          </div>
+      </div>
+
+      <!-- Featured Topic 2 -->
+      <div class="col d-flex align-items-start">
+          <div class="skill-card p-4 border rounded shadow-sm text-center">
+              <img src="assets/skills/8757988.png" alt="Blockchain Technology" class="mb-3 skill-icon">
+              <h3 class="fw-bold mb-3 text-body-emphasis">Blockchain Technology</h3>
+              <p>Exploring the power of blockchain for secure, decentralized transactions and building applications in the crypto and fintech sectors.</p>
+          </div>
+      </div>
+
+   </div>
+
+ </div>
+
+ <div id="Blog" class="container py-5">
+  <h1 class="text-center mb-5">Blog</h1>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Post 1 -->
+      <div class="col">
+          <div class="blog-card p-4 border rounded shadow-sm h-100 position-relative">
+              <h3 class="mb-3 text-dark"> Exploring Nature at Peradeniya Botanical Garden</h3>
+              <div class="mb-2 text-body-secondary">March 09</div>
+              <p class="card-text">Our 22/23 Software Engineering batch kicked off our first meetup at the beautiful Peradeniya Botanical Garden. Surrounded by the vibrant flora, we enjoyed a day filled with laughter, bonding, and reconnecting with nature. The garden provided the perfect backdrop for team-building activities and fun games that brought everyone together. Walking among the towering palms, sharing stories, and capturing memories on camera, we created a connection that will last beyond our university years. This first meetup set the tone for many more exciting adventures to come!</p>
+              <div class="thumbnail-container d-none d-lg-block">
+                 <img src="./assets/blog/meetup1.jpg" alt="">
+              </div>
+          </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="col">
+          <div class="blog-card p-4 border rounded shadow-sm h-100 position-relative">
+            
+              <h3 class="mb-3 text-dark"> Reaching New Heights at Colombo Lotus Tower</h3>
+              <div class="mb-2 text-body-secondary">July 29</div>
+              <p class="card-text">For our second meetup, we took things to new heights—literally! We gathered at the iconic Colombo Lotus Tower, where the view from the top was simply breathtaking. Standing at Sri Lanka’s tallest structure, we enjoyed panoramic views of the city and the ocean beyond, a sight that left us in awe. We explored each level, took countless group photos, and even held a few friendly competitions to make the day even more memorable. Whether we were playing games or sharing meals, this experience brought our batch closer together. It was a day of fun, laughter, and unforgettable sights.</p>
+              <div class="thumbnail-container d-none d-lg-block">
+                  <img src="./assets/blog/meetup2.jpg" alt="">
+              </div>
+          </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="col">
+          <div class="blog-card p-4 border rounded shadow-sm h-100 position-relative">
+            
+              <h3 class="mb-3 text-dark"> Return to Peradeniya Botanical Garden for a Nature-Inspired Finale</h3>
+              <div class="mb-2 text-body-secondary">Nov 12</div>
+              <p class="card-text">For our third meetup, we returned to Peradeniya Botanical Garden, and the experience was as magical as the first time! We revisited our favorite spots and played outdoor games that brought out everyone’s competitive spirit. This time, we hosted a few planned activities, including a team scavenger hunt that got everyone involved and energized. After a long day of games, laughter, and capturing scenic moments, we closed our final meetup with gratitude for the connections we’ve built over these gatherings. It was a fitting and heartwarming end to our series of meetups, leaving us excited for what the future holds.</p>
+              <div class="thumbnail-container d-none d-lg-block">
+                 <img src="assets/blog/meetup3.jpg" alt="" >
+              </div>
+          </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="col">
+          <div class="blog-card p-4 border rounded shadow-sm h-100 position-relative">
+              <h3 class="mb-3 text-dark">Unleashing Our Skills Online!</h3>
+              <div class="mb-2 text-body-secondary">Upcoming</div>
+              <p class="card-text">We’re thrilled to announce an exciting new event for our 22/23 Software Engineering batch—our very own virtual Talent Show! Held over Zoom, this event promises to be a showcase of the diverse talents within our batch, from dancing and singing to tech-driven creativity and more. It’s a unique chance for us to step away from our daily routines, connect with each other, and celebrate the incredible skills we’ve honed both inside and outside the classroom.
+
+                Whether you’re a musician, a dancer, a tech whiz, or simply a supporter, join us as we perform, cheer, and make memories together. This Talent Show is more than just an event; it’s a testament to the creative and passionate community we’ve built. Get ready for an evening of fun, connection, and unforgettable performances. Let’s make this virtual stage come alive!</p>
+              
+              <div class="thumbnail-container d-none d-lg-block">
+                <img src="assets/blog/istockphoto-1168788101-612x612.jpg" alt="">
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-12 d-flex justify-content-center">
+  <a href="./blogpg.html">
+    <button class="show-more-btn" >Show More</button>
+  </a>
+ 
+ </div>
+</div>
+<div id="Tech" class="py-5 my-5 mx-5">
+  <div class="container">
+    <h1 class="text-center mb-4">Tech Stack</h1>
+    <div class="tech-stack-container d-flex flex-wrap justify-content-center position-relative gap-3 d-flex justify-content-between">
+      <img src="./assets/react-icon-512x512-u6e60ayf-removebg-preview.png" alt="Tech 1" class="tech-icon">
+      <img src="./assets/ss-removebg-preview.png" alt="Tech 2" class="tech-icon">
+      <img src="./assets/5968332-removebg-preview.png" alt="Tech 3" class="tech-icon">
+      <img src="assets/development+logo+mysql+icon-1320184807686758112.png" alt="Tech 4" class="tech-icon">
+      <img src="./assets/919826-removebg-preview.png" alt="Tech 5" class="tech-icon">
+      <img src="./assets/Scikit_learn_logo_small.svg-removebg-preview.png" alt="Tech 6" class="tech-icon">
+      <img src="./assets/apps-figma-icon-1024x1024-cb4t8vyj-removebg-preview.png" alt="Tech 7" class="tech-icon">
+      <img src="./assets/nextjs-icon-1024x1024-5et230l7.png" alt="Tech 8" class="tech-icon">
+      <img src="./assets/ten-removebg-preview.png" alt="Tech 9" class="tech-icon">
+    </div>
+  
+  </div>
+</div>
+<div id="Gallery" class="container py-5">
+  <h1 class="text-center mb-5">Gallery</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <!-- Gallery Image 1 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/WhatsApp Image 2024-11-15 at 15.15.41_e81122b7.jpg" alt="Gallery Image 1" class="img-fluid rounded shadow" >
+          </div>
+      </div>
+      <!-- Gallery Image 2 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/imge2.jpg" alt="Gallery Image 2" class="img-fluid rounded shadow">
+          </div>
+      </div>
+      <!-- Gallery Image 3 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/image3.jpg" alt="Gallery Image 3" class="img-fluid rounded shadow">
+          </div>
+      </div>
+      <!-- Gallery Image 4 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/imag4.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow">
+          </div>
+      </div>
+      <!-- Gallery Image 5 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/image5.jpg" alt="Gallery Image 5" class="img-fluid rounded shadow">
+          </div>
+      </div>
+      <!-- Gallery Image 6 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/image6.jpg" alt="Gallery Image 6" class="img-fluid rounded shadow">
+          </div>
+      </div>
+      <!-- Gallery Image 7 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/image7 (2).jpg" alt="Gallery Image 7" class="img-fluid rounded shadow">
+          </div>
+      </div>
+      <!-- Gallery Image 8 -->
+      <div class="col">
+          <div class="gallery-card">
+              <img src="assets/gallery/image8.JPG" alt="Gallery Image 8" class="img-fluid rounded shadow">
+          </div>
+      </div>
+  </div>
+
+  <!-- Show More Button -->
+  <div class="col-12 text-center mt-4">
+      <button class="show-more-btn">Show More</button>
+  </div>
+</div>
+
+  <div id="Team" class="container py-5">
+    <h1 class="text-center mb-4">Our Team</h1>
+    <div class="row g-4">
+  
+      <!-- Team Member 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-member text-center p-4 border rounded shadow-sm">
+          <img class="picss img-fluid rounded-circle mb-3" src="./assets/profile/WhatsApp Image 2024-11-11 at 13.31.06_fa693b89.jpg" alt="Member Image" height="200px" width="200px">
+          <h2 class="team-title text-dark">Tech Lead</h2>
+          <h4 class="team-name">Kalana Yapa</h4>
+          <a href="https://www.linkedin.com/in/kalana-yapa-41b8bb315/" target="_blank" class="social-icon">
+            <img src="assets/2496097.png" alt="Social Icon" style="height: 50px; width: 50px;">
+          </a>
+        </div>
+      </div>
+  
+      <!-- Team Member 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-member text-center p-4 border rounded shadow-sm">
+          <img class="picss img-fluid rounded-circle mb-3" src="./assets/profile/navindu.jpg" alt="Member Image" height="200px" width="200px">
+          <h2 class="team-title text-dark">Backend Developer</h2>
+          <h4 class="team-name">Navindu Alahakoon</h4>
+          <a href="http://www.linkedin.com/in/navindu-alahakoon-8a83ab1aa" target="_blank" class="social-icon">
+            <img src="assets/2496097.png" alt="Social Icon" style="height: 50px; width: 50px;">
+          </a>
+        </div>
+      </div>
+  
+      <!-- Team Member 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-member text-center p-4 border rounded shadow-sm">
+          <img class="picss img-fluid rounded-circle mb-3" src="./assets/profile/image.jpg" alt="Member Image" height="200px" width="200px">
+          <h2 class="team-title text-dark">Frontend Developer</h2>
+          <h4 class="team-name">Kavindu Chamith </h4>
+          <a href="https://www.linkedin.com/in/kavindu-chamit03" target="_blank" class="social-icon">
+            <img src="assets/2496097.png" alt="Social Icon" style="height: 50px; width: 50px;">
+          </a>
+        </div>
+      </div>
+  
+      <!-- Team Member 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-member text-center p-4 border rounded shadow-sm">
+          <img class="picss img-fluid rounded-circle mb-3" src="./assets/profile/jayami.jpg" alt="Member Image" height="200px" width="200px">
+          <h2 class="team-title text-dark">Frontend Developer</h2>
+          <h4 class="team-name">Jayami Sulakshi</h4>
+          <a href="http://www.linkedin.com/in/jayami-sulakshi-58a286316" target="_blank" class="social-icon">
+            <img src="assets/2496097.png" alt="Social Icon" style="height: 50px; width: 50px;">
+          </a>
+        </div>
+      </div>
+  
+      <!-- Team Member 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-member text-center p-4 border rounded shadow-sm">
+          <img class="picss img-fluid rounded-circle mb-3" src="./assets/profile/IMG_1107.jpg" alt="Member Image" height="200px" width="200px">
+          <h2 class="team-title text-dark"> Frontend Developer</h2>
+          <h4 class="team-name">Pathum Piyumal</h4>
+          <a href="https://www.linkedin.com/in/pathum-piyumal-kumarathunga-48185b32b" target="_blank" class="social-icon">
+            <img src="assets/2496097.png" alt="Social Icon" style="height: 50px; width: 50px;">
+          </a>
+        </div>
+      </div>
+  
+      <!-- Team Member 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-member text-center p-4 border rounded shadow-sm">
+          <img class="picss img-fluid rounded-circle mb-3" src="./assets/profile/IMG-20240220-WA0093.jpg" alt="Member Image" height="200px" width="200px">
+          <h2 class="team-title text-dark">Backend Developer</h2>
+          <h4 class="team-name">Kasuni Madhara</h4>
+          <a href="https://www.linkedin.com/in/kasuni-wijerathna" target="_blank" class="social-icon">
+            <img src="assets/2496097.png" alt="Social Icon" style="height: 50px; width: 50px;">
+          </a>
+        </div>
+      </div>
+  
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+  
+  
+    <footer id="Footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2024 Kalana Yapa</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#Home" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#About" class="nav-link px-2 text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="#Blog" class="nav-link px-2 text-body-secondary">Blog</a></li>
+        <li class="nav-item"><a href="#Skills" class="nav-link px-2 text-body-secondary">Skills</a></li>
+        <li class="nav-item"><a href="#Team" class="nav-link px-2 text-body-secondary">Team</a></li>
+      </ul>
+    
+    </footer>
+
+    <!-- --------------Curser Effect--------------- -->
+    <div class="cursor">
+      
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <!-- --------------Curser Effect--------------- -->
+
+    
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="CursorEffect.js"></script>
+</body>
+</html>
