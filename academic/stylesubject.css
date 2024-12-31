@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: #1B3350;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+     background: linear-gradient(to right, #2F69B1, #43B4D3, #7CC7BD); 
+     -webkit-background-clip: text; 
+    color: transparent;
+    margin-bottom: 60px;
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.subject-card {
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    padding-top: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-style: calc();
+    width: 90%;
+    height: 100px;
+}
+
+.subject-card i {
+    font-size: 1.5em;
+    
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #357ABD;
+}
+
+.subject-card:hover i {
+    transform: rotate(15deg);
+    transition: transform 0.2s ease-in-out;
+}
+.sub-icon {
+    font-size: 2em;
+    color: #ff6666;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px){
+    
+    .subject-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+        width: 100%; 
+        max-width: 90%; 
+    }
+    .subject-card {
+        padding: 5px;
+        padding-top: 50px;
+        height: 100px;
+    }
+
+}

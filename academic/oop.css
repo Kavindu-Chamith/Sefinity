@@ -1,0 +1,193 @@
+.progress-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #4285f4;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh;  */
+    background-color: #1B3350;
+}
+
+.sub {
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+.sub-name{
+    font-size: 4rem;
+    font-weight: bold;
+     background: linear-gradient(to right, #2F69B1, #43B4D3, #7CC7BD); 
+     -webkit-background-clip: text; 
+    color: transparent;
+}
+.sub-code{
+    color: #A7D7D2;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+}
+.sub-para{
+    color: #BAD5F1;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+
+/* PDF Grid */
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+/* Card Styling for PDF Links */
+
+.pdf-link {
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pdf-link i {
+    font-size: 2em;
+    color: #ff6666;
+    margin-bottom: 10px;
+}
+
+.pdf-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.pdf-date{
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #d1e8ff;
+}
+
+
+/* Switch Button */
+.switch-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #30475e;
+    color: #f0f2f5;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.switch-button:hover {
+    background-color: #90caf9;
+}
+footer {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding: 10px;
+    color: #7CC7BD;
+    margin-top: 30px;
+   
+}
+.footer-link{
+    color: #BAD5F1;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+.footer-link:hover {
+    background-color: #306dcf;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: #30475e;
+    color: #f0f2f5;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+     /* Hidden by default */
+}
+
+#topBtn:hover {
+    background-color:#90caf9;
+}
+/* Fade-in effect for pdf-grid */
+.card-content{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delaying animation for a cascading effect */
+.card-content:nth-child(1) { animation-delay: 0.2s; }
+.card-content:nth-child(2) { animation-delay: 0.4s; }
+.card-content:nth-child(3) { animation-delay: 0.6s; }
+.card-content:nth-child(4) { animation-delay: 0.8s; }
+.card-content:nth-child(5) { animation-delay: 1s; }
+.card-content:nth-child(6) { animation-delay: 1.2s; }
+.card-content:nth-child(7) { animation-delay: 1.4s; }
+.card-content:nth-child(8) { animation-delay: 1.6s; }
+
+@media screen and (max-width: 800px){
+
+    .pdf-grid {
+        display: grid;
+        flex-wrap: wrap;  
+        gap: 20px;
+        padding: 20px;
+        width: 400px;
+        margin: 40px;
+        justify-content: center;
+    }
+    .pdf-link {
+        min-width: 100px;
+        flex: 1 1 50%; 
+    }
+    
+}
